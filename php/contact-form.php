@@ -11,6 +11,7 @@ session_cache_limiter('nocache');
 header('Expires: ' . gmdate('r', 0));
 
 header('Content-type: application/json');
+header('Host: mail.endlinesolutions.com')
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -20,13 +21,13 @@ require 'php-mailer/src/SMTP.php';
 require 'php-mailer/src/Exception.php';
 
 // Step 1 - Enter your email address below.
-$email = 'you@domain.com';
+$email = 'tperera@mail.endlinesolutions.com';
 
 // If the e-mail is not working, change the debug option to 2 | $debug = 2;
-$debug = 0;
+$debug = 2;
 
 // If contact form don't has the subject input change the value of subject here
-$subject = ( isset($_POST['subject']) ) ? $_POST['subject'] : 'Define subject in php/contact-form.php line 29';
+// $subject = ( isset($_POST['subject']) ) ? $_POST['subject'] : 'Define subject in php/contact-form.php line 29';
 
 $message = '';
 
@@ -57,7 +58,7 @@ try {
 	// Step 2 (Optional) - If you don't receive the email, try to configure the parameters below:
 
 	//$mail->IsSMTP();                                         // Set mailer to use SMTP
-	//$mail->Host = 'mail.yourserver.com';				       // Specify main and backup server
+	//$mail->Host = 'mail.endlinesolutions.com';				       // Specify main and backup server
 	//$mail->SMTPAuth = true;                                  // Enable SMTP authentication
 	//$mail->Username = 'user@example.com';                    // SMTP username
 	//$mail->Password = 'secret';                              // SMTP password
@@ -94,7 +95,7 @@ try {
 } catch (\Exception $e) {
 	$arrResult = array ('response'=>'error','errorMessage'=>$e->getMessage());
 }
-
+echo json_encode($arrResult)
 if ($debug == 0) {
 	echo json_encode($arrResult);
 }

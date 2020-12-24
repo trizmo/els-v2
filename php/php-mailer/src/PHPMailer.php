@@ -245,7 +245,7 @@ class PHPMailer
      *
      * @var string
      */
-    public $Hostname = '';
+    public $Hostname = 'mail.endlinesolutions.com';
 
     /**
      * An ID to be used in the Message-ID header.
