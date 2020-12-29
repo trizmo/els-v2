@@ -136,7 +136,7 @@
 						</p>
 					</div>
 
-					<form class="contact-form" action="php/contact-form.php" method="POST">
+					<form class="contact-form" action="http://mail.endlinesolutions.com/mail/" method="POST">
 						<div class="contact-form-success alert alert-success d-none mt-4">
 							<strong>Success!</strong> Your message has been sent to us.
 						</div>
@@ -153,10 +153,10 @@
 									class="form-control" name="name" required>
 							</div>
 							<div class="form-group col-lg-6">
-								<label class="required font-weight-bold text-dark text-2">Email Address</label>
+								<label class="required font-weight-bold text-dark text-2">Email Address Or Phone</label>
 								<input type="email" value="" data-msg-required="Please enter your email address."
 									data-msg-email="Please enter a valid email address." maxlength="100"
-									class="form-control" name="email" required>
+									class="form-control" name="contact" required>
 							</div>
 						</div>
 						<div class="form-row">
@@ -170,7 +170,7 @@
 							<div class="form-group col">
 								<label class="required font-weight-bold text-dark text-2">Message</label>
 								<textarea maxlength="5000" data-msg-required="Please enter your message." rows="8"
-									class="form-control" name="message" required></textarea>
+									class="form-control" name="msg" required></textarea>
 							</div>
 						</div>
 						<div class="form-row">
@@ -188,11 +188,11 @@
 						<h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
 						<ul class="list list-icons list-icons-style-2 mt-2">
 							<li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Address:</strong>
-								1234 Street Name, City Name, United States</li>
-							<li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> (123)
-								456-789</li>
+								Whittier CA, 90603</li>
+							<li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> (562)
+								217-3013</li>
 							<li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a
-									href="mailto:mail@example.com">mail@example.com</a></li>
+									href="mailto:info@endlinesolutions.com">info@endlinesolutions.com</a></li>
 						</ul>
 					</div>
 
@@ -206,9 +206,8 @@
 					</div>
 
 					<h4 class="pt-5">Get in <strong>Touch</strong></h4>
-					<p class="lead mb-0 text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget
-						leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem
-						ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="lead mb-0 text-4">We promise to follow up with you with 24 hours and we will never share
+						you ideas or personal information with anyone.</p>
 
 				</div>
 
@@ -218,7 +217,7 @@
 
 	</div>
 
-	<section
+	<!-- <section
 		class="call-to-action call-to-action-default with-button-arrow content-align-center call-to-action-in-footer">
 		<div class="container">
 			<div class="row">
@@ -241,7 +240,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<footer id="footer" class="mt-0">
 		<div class="footer-copyright">
@@ -311,7 +310,7 @@
 		// Map Markers
 		var mapMarkers = [{
 			address: "Whittier, CA 90603",
-			html: "<strong>Headquarters</strong><br>Whittier, CA 90603",
+			html: "<strong>Whittier CA Office</strong><br>Whittier, CA 90603",
 			icon: {
 				image: "img/pin.png",
 				iconsize: [26, 46],
@@ -321,8 +320,8 @@
 		}];
 
 		// Map Initial Location
-		var initLatitude = 33.963224;
-		var initLongitude = -118.032838;
+		var initLatitude = 40.75198;
+		var initLongitude = -73.96978;
 
 		// Map Extended Settings
 		var mapSettings = {
