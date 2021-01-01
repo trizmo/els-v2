@@ -1,0 +1,23 @@
+{
+  "name": "basicserver",
+  "version": "1.0.0",
+  "description": "basic server setup with node and express to listen and serve static files",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trizmo/basicServer-node.git"
+  },
+  "author": "Tristan Perera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trizmo/basicServer-node/issues"
+  },
+  "homepage": "https://github.com/trizmo/basicServer-node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
