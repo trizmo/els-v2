@@ -30,6 +30,12 @@ app.get("/portfolio", (req, res) => {
 app.get("/contact", (req, res) => {
     res.sendFile(path.resolve(__dirname, 'html', 'contact-us.html'));
 })
+app.get("/privacy", (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'html', 'privacy.html'));
+})
+app.get("/terms", (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'html', 'terms.html'));
+})
 app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, 'html', '404.html'));
     // res.json({ status: 404, message: "404 not found" })
