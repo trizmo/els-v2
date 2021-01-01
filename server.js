@@ -31,7 +31,8 @@ app.get("/contact", (req, res) => {
     res.sendFile(path.resolve(__dirname, 'html', 'contact-us.html'));
 })
 app.get("*", (req, res) => {
-    res.json({ status: 404, message: "404 not found" })
+    res.sendFile(path.resolve(__dirname, 'html', '404.html'));
+    // res.json({ status: 404, message: "404 not found" })
 })
 // } else {
 // }
