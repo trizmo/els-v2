@@ -1,1 +1,64 @@
 /* Add here all your CSS customizations */
+
+.price-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row-space-between-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-space-around-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.custom-card-style-1-NEW {
+   min-width: 250px
+}
+
+/* .feature-card-container {
+    min-width: 275px;
+    min-height: 275px;
+} */
+
+.feature-card{
+    background-color: rgb(48, 55, 79);
+}
+
+.feature-card h3{
+    color: rgb(109, 167, 255)!important
+}
+
+.feature-card div.price{
+    color: rgb(255, 255, 255)!important
+}
+
+.feature-card span.ml-1{
+    color: rgb(215, 215, 215)!important
+}
+
+.feature-card svg{
+    stroke: #fff!important
+}
+
+@media (max-width: 767px) {
+ .price-card-container {
+     flex-direction: column;
+ }
+
+ 
+.custom-card-style-1-NEW {
+    width: 550px;
+    /* max-width: 550px */
+}
+
+}
