@@ -11,7 +11,7 @@ session_cache_limiter('nocache');
 header('Expires: ' . gmdate('r', 0));
 
 header('Content-type: application/json');
-header('Host: mail.endlinesolutions.com')
+header('Host: https://endlinesolutions.com')
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -21,10 +21,10 @@ require 'php-mailer/src/SMTP.php';
 require 'php-mailer/src/Exception.php';
 
 // Step 1 - Enter your email address below.
-$email = 'tperera@mail.endlinesolutions.com';
+$email = 'no-reply@endlinesolutions.com';
 
 // If the e-mail is not working, change the debug option to 2 | $debug = 2;
-$debug = 2;
+$debug = 1;
 
 // If contact form don't has the subject input change the value of subject here
 // $subject = ( isset($_POST['subject']) ) ? $_POST['subject'] : 'Define subject in php/contact-form.php line 29';
@@ -58,10 +58,10 @@ try {
 	// Step 2 (Optional) - If you don't receive the email, try to configure the parameters below:
 
 	//$mail->IsSMTP();                                         // Set mailer to use SMTP
-	//$mail->Host = 'mail.endlinesolutions.com';				       // Specify main and backup server
-	//$mail->SMTPAuth = true;                                  // Enable SMTP authentication
-	//$mail->Username = 'user@example.com';                    // SMTP username
-	//$mail->Password = 'secret';                              // SMTP password
+	$mail->Host = 'https://endlinesolutions.com';				       // Specify main and backup server
+	$mail->SMTPAuth = true;                                  // Enable SMTP authentication
+	$mail->Username = 'no-reply';                    // SMTP username
+	$mail->Password = 'Elijah123!';                              // SMTP password
 	//$mail->SMTPSecure = 'tls';                               // Enable encryption, 'ssl' also accepted
 	//$mail->Port = 587;   								       // TCP port to connect to
 

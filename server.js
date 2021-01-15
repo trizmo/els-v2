@@ -40,6 +40,8 @@ app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, 'pages', '404.html'));
 })
 
+
+// acme-challenge for ssl cert
 app.get("/.well-known/acme-challenge/6kvagXsNn3b26Fk3Ct_reGY-eT-taaMQ79uEaTg3Vk0", (req, res) => {
     res.sendFile(path.resolve(__dirname, "html", ".well-known", "acme-challenge", "6kvagXsNn3b26Fk3Ct_reGY-eT-taaMQ79uEaTg3Vk0", "6kvagXsNn3b26Fk3Ct_reGY-eT-taaMQ79uEaTg3Vk0.tKxqudkAHjbp2TFTLzzTlukU3yKW8IKP4NQ2r56Q_lY"));
 })
