@@ -1,9 +1,4 @@
 <?php
-/*
-Name: 			Contact Form
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	8.2.0
-*/
 
 namespace PortoContactForm;
 
@@ -58,10 +53,10 @@ try {
 	// Step 2 (Optional) - If you don't receive the email, try to configure the parameters below:
 
 	//$mail->IsSMTP();                                         // Set mailer to use SMTP
-	$mail->Host = 'https://endlinesolutions.com';				       // Specify main and backup server
-	$mail->SMTPAuth = true;                                  // Enable SMTP authentication
-	$mail->Username = 'no-reply';                    // SMTP username
-	$mail->Password = 'Elijah123!';                              // SMTP password
+	// $mail->Host = 'https://endlinesolutions.com';				       // Specify main and backup server
+	// $mail->SMTPAuth = true;                                  // Enable SMTP authentication
+	// $mail->Username = '';                    // SMTP username
+	// $mail->Password = '';                              // SMTP password
 	//$mail->SMTPSecure = 'tls';                               // Enable encryption, 'ssl' also accepted
 	//$mail->Port = 587;   								       // TCP port to connect to
 
